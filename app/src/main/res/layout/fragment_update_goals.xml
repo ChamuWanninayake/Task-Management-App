@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateGoals"
+    android:background="@android:color/white">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_textviews_update"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/et_goalTitle_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="#26A69A"
+                android:hint="Goal title"
+                android:inputType="text"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+
+
+            <EditText
+                android:id="@+id/et_goalDescription_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="#26A69A"
+                android:hint="Description"
+                android:inputType="textShortMessage"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+
+            <Button
+                android:id="@+id/btn_pickDate_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_button"
+                android:backgroundTint="#EF5350"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="Pick a date"
+                android:textColor="@android:color/white" />
+
+
+            <TextView
+                android:id="@+id/tv_dateSelected_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Date: (not selected)"
+                android:textSize="20sp" />
+
+
+            <Button
+                android:id="@+id/btn_pickTime_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_button"
+                android:backgroundTint="#42A5F5"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="Pick a time"
+                android:textColor="@android:color/white" />
+
+
+
+            <TextView
+                android:id="@+id/tv_timeSelected_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Time: (not selected)"
+                android:textSize="20sp" />
+
+
+
+
+            <LinearLayout
+                android:id="@+id/layout_checkbox_badge_money_assignment_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/iv_checkboxselected_update"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/checkbox_selected" />
+
+
+                <ImageView
+                    android:id="@+id/iv_badgeSelected_update"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/badge_selected" />
+
+
+                <ImageView
+                    android:id="@+id/iv_moneySelected_update"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/money_selected" />
+
+                <ImageView
+                    android:id="@+id/iv_assignmentSelected_update"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/assignment_selected" />
+
+
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_save_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_button"
+                android:backgroundTint="#26A69A"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="Save"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
