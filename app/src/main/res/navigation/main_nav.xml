@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/goalList"
-        android:name="com.example.goaltrackingapplication.GoalList"
+        android:name="com.example.goaltrackingapplication.ui.fragments.goalslist.GoalList"
         android:label="Goals"
         tools:layout="@layout/fragment_goal_list" >
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/createGoals"
-        android:name="com.example.goaltrackingapplication.CreateGoals"
+        android:name="com.example.goaltrackingapplication.ui.fragments.creategoals.CreateGoals"
         android:label="Create Goals"
         tools:layout="@layout/fragment_create_goals" >
         <action
@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/updateGoals"
-        android:name="com.example.goaltrackingapplication.UpdateGoals"
+        android:name="com.example.goaltrackingapplication.ui.fragments.updategoals.UpdateGoals"
         android:label="Update Goals"
         tools:layout="@layout/fragment_update_goals" >
         <action
