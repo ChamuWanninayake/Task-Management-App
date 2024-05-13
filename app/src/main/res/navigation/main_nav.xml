@@ -7,32 +7,39 @@
 
     <fragment
         android:id="@+id/goalList"
-        android:name="com.example.goaltrackingapplication.ui.fragments.goalslist.GoalList"
+        android:name="com.federicocotogno.goaltracker.ui.fragments.Goallist.HabitList"
         android:label="Goals"
         tools:layout="@layout/fragment_goal_list" >
         <action
-            android:id="@+id/action_goalList_to_createGoals"
-            app:destination="@id/createGoals" />
+            android:id="@+id/action_goalList_to_updategoalItem"
+            app:destination="@id/updategoalItem" />
         <action
-            android:id="@+id/action_goalList_to_updateGoals"
-            app:destination="@id/updateGoals" />
+            android:id="@+id/action_goalList_to_creategoalItem"
+            app:destination="@id/creategoalItem" />
+        <action
+            android:id="@+id/action_goalList_to_creategoalItem2"
+            app:destination="@id/creategoalItem" />
     </fragment>
     <fragment
-        android:id="@+id/createGoals"
-        android:name="com.example.goaltrackingapplication.ui.fragments.creategoals.CreateGoals"
-        android:label="Create Goals"
-        tools:layout="@layout/fragment_create_goals" >
+        android:id="@+id/updategoalItem"
+        android:name="com.federicocotogno.goaltracker.ui.fragments.updategoal.UpdateGoalItem"
+        android:label="Update Goal"
+        tools:layout="@layout/fragment_update_goal_item" >
         <action
-            android:id="@+id/action_createGoals_to_goalList"
-            app:destination="@id/goalList" />
+            android:id="@+id/action_updategoalItem_to_goalList"
+            app:destination="@id/goalList"
+            app:exitAnim="@anim/fragment_close_exit" />
+        <argument
+            android:name="selectedgoal"
+            app:argType="com.federicocotogno.goaltracker.data.models.Goal" />
     </fragment>
     <fragment
-        android:id="@+id/updateGoals"
-        android:name="com.example.goaltrackingapplication.ui.fragments.updategoals.UpdateGoals"
-        android:label="Update Goals"
-        tools:layout="@layout/fragment_update_goals" >
+        android:id="@+id/creategoalItem"
+        android:name="com.federicocotogno.goaltracker.ui.fragments.creategoal.CreateGoalItem"
+        android:label="Create a new Goal"
+        tools:layout="@layout/fragment_create_goal_item" >
         <action
-            android:id="@+id/action_updateGoals_to_goalList"
+            android:id="@+id/action_creategoalItem_to_goalList"
             app:destination="@id/goalList" />
     </fragment>
 </navigation>

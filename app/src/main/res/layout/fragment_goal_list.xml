@@ -1,29 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragments.goalslist.GoalList">
+    tools:context=".ui.fragments.GoalList.habitlist">
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipeToRefresh"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_habits"
+            android:id="@+id/rv_goals"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             tools:itemCount="20"
-            tools:listitem="@layout/recycler_goals" />
-
-
+            tools:listitem="@layout/recycler_goal_item" />
 
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
-
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_add"
@@ -34,23 +31,18 @@
         android:layout_margin="24dp"
         android:clickable="true"
         android:focusable="true"
-        android:src="@drawable/baseline_add" />
+        android:src="@drawable/ic_add" />
 
-
-<!--when there is no items in the recycler view, this empty view will be appeared-->
     <TextView
         android:id="@+id/tv_emptyView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="Add a Goal"
+        android:text="Add a Goal! "
         android:textColor="@android:color/white"
         android:textSize="20sp"
         android:textStyle="italic"
         android:visibility="gone" />
-
-
-
 
 
 </RelativeLayout>
